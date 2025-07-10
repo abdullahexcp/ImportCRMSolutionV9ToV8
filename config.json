@@ -1,0 +1,34 @@
+{
+    "removeElements": [
+        "IsDataSourceSecret",
+        "AutoNumberFormat",
+        "IsBPFEntity",
+        "SavedQuery",
+        "IsRetrieveAuditEnabled",
+        "IsRetrieveMultipleAuditEnabled",
+        "EntityDataProviders",
+        "IsVisibleInMobile",
+        "IsVisibleInMobileClient",
+        "IsReadOnlyInMobileClient",
+        "IsOfflineInMobileClient",
+        "MobileOfflineFilters",
+        "IsSearchable",
+        "IsFilterable",
+        "IsRetrievable",
+        "IsLocalizable",
+        "IsRetrievable",
+        "IsFilterable",
+        "IsSearchable",
+        "IsSolutionAware"
+    ],
+    "removeAttributes": [
+        {
+            "tagName": "option",
+            "attributes": [
+                "ExternalValue",
+                "Color"
+            ]
+        }
+    ],
+    "addObjectTypeCode": true
+}

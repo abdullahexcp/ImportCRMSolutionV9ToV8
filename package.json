@@ -1,0 +1,15 @@
+{
+    "name": "crm-xml-processor",
+    "version": "1.0.0",
+    "description": "CRM Dynamics XML processor for version downgrade",
+    "main": "crm-xml-processor.js",
+    "dependencies": {
+      "xmldom": "^0.6.0"
+    },
+    "bin": {
+      "crm-xml-processor": "./crm-xml-processor.js"
+    },
+    "scripts": {
+      "start": "node crm-xml-processor.js"
+    }
+  }

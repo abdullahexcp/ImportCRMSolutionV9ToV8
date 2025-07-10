@@ -1,0 +1,994 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <ObjectTypeCode>10098</ObjectTypeCode>
+      <Name LocalizedName="Domestic Invoice" OriginalName="Installment">new_indvpayment</Name>
+      <EntityInfo>
+        <entity Name="new_indvpayment">
+          <attributes>
+            <attribute PhysicalName="new_isopeningbalance">
+              <Type>picklist</Type>
+              <Name>new_isopeningbalance</Name>
+              <LogicalName>new_isopeningbalance</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <AppDefaultValue>0</AppDefaultValue>
+              <optionset Name="new_indvpayment_new_isopeningbalance">
+                <OptionSetType>picklist</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="is opening balance" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="0">
+                    <labels>
+                      <label description="No" languagecode="1033" />
+                    </labels>
+                  </option>
+                  <option value="1">
+                    <labels>
+                      <label description="Yes" languagecode="1033" />
+                    </labels>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="is opening balance" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+      <RibbonDiffXml>
+        <CustomActions>
+          <HideCustomAction
+            HideActionId="btndinvoiceMscrm.SubGrid.new_indvpayment.AddExistingStandard.HideAction"
+            Location="Mscrm.SubGrid.new_indvpayment.AddExistingStandard" />
+          <HideCustomAction HideActionId="Mscrm.Form.new_indvpayment.Deactivate.HideAction"
+            Location="Mscrm.Form.new_indvpayment.Deactivate" />
+          <HideCustomAction HideActionId="Mscrm.HomepageGrid.new_indvpayment.Deactivate.HideAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.Deactivate" />
+          <HideCustomAction HideActionId="Mscrm.SubGrid.new_indvpayment.Deactivate.HideAction"
+            Location="Mscrm.SubGrid.new_indvpayment.Deactivate" />
+          <CustomAction
+            Id="new.btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.CustomAction"
+            Location="Mscrm.Form.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="20">
+            <CommandUIDefinition>
+              <Button
+                Command="btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.Command"
+                Id="btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice"
+                Image32by32="/_imgs/ribbon/ConvertOpportunity_16.png"
+                Image16by16="/_imgs/ribbon/ConvertOpportunity_16.png"
+                LabelText="$LocLabels:btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.LabelText"
+                Sequence="20" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.CustomAction"
+            Location="Mscrm.Form.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="80">
+            <CommandUIDefinition>
+              <Button
+                Command="btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.Command"
+                Id="btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice"
+                LabelText="$LocLabels:btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.LabelText"
+                Sequence="80" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Actions.Controls._children"
+            Sequence="20">
+            <CommandUIDefinition>
+              <Button
+                Command="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.Command"
+                Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber"
+                LabelText="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.LabelText"
+                Sequence="20" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Actions.Controls._children"
+            Sequence="40">
+            <CommandUIDefinition>
+              <Button
+                Command="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.Command"
+                Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS"
+                LabelText="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.LabelText"
+                Sequence="40" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="140">
+            <CommandUIDefinition>
+              <Button
+                Command="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.Command"
+                Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts"
+                LabelText="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.LabelText"
+                Sequence="140" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="120">
+            <CommandUIDefinition>
+              <Button
+                Command="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.Command"
+                Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice"
+                LabelText="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.LabelText"
+                Sequence="120" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.CustomAction"
+            Location="Mscrm.Form.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="40">
+            <CommandUIDefinition>
+              <Button
+                Command="btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.Command"
+                Id="btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice"
+                Image32by32="$webresource:new_money32.png"
+                Image16by16="$webresource:new_money16.png"
+                LabelText="$LocLabels:btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.LabelText"
+                Sequence="40" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.ToolTipTitle"
+                ToolTipDescription="$LocLabels:btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.CustomAction"
+            Location="Mscrm.Form.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="60">
+            <CommandUIDefinition>
+              <Button
+                Command="calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.Command"
+                Id="calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice"
+                LabelText="$LocLabels:calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.LabelText"
+                Sequence="60" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.ToolTipTitle"
+                ToolTipDescription="$LocLabels:calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.CustomAction"
+            Location="Mscrm.Form.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="41">
+            <CommandUIDefinition>
+              <Button Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails"
+                Command="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.Command"
+                Sequence="100"
+                LabelText="$LocLabels:new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.LabelText"
+                ToolTipTitle="$LocLabels:new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.ToolTipTitle"
+                ToolTipDescription="$LocLabels:new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.Description"
+                TemplateAlias="isv" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Actions.Controls._children"
+            Sequence="41">
+            <CommandUIDefinition>
+              <Button Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX"
+                Command="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.Command"
+                Sequence="100"
+                LabelText="$LocLabels:new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.LabelText"
+                ToolTipTitle="$LocLabels:new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.ToolTipTitle"
+                ToolTipDescription="$LocLabels:new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.Description"
+                TemplateAlias="isv" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Actions.Controls._children"
+            Sequence="41">
+            <CommandUIDefinition>
+              <Button Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial"
+                Command="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.Command"
+                Sequence="80"
+                LabelText="$LocLabels:new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.LabelText"
+                ToolTipTitle="$LocLabels:new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.ToolTipTitle"
+                ToolTipDescription="$LocLabels:new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.Description"
+                TemplateAlias="isv" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Actions.Controls._children"
+            Sequence="60">
+            <CommandUIDefinition>
+              <Button
+                Command="InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.Command"
+                Id="InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport"
+                LabelText="$LocLabels:InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.LabelText"
+                Sequence="60" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.ToolTipTitle"
+                ToolTipDescription="$LocLabels:InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+          <HideCustomAction HideActionId="new.Mscrm.HomepageGrid.new_indvpayment.BulkDelete.Hide"
+            Location="Mscrm.HomepageGrid.new_indvpayment.BulkDelete" />
+          <HideCustomAction HideActionId="new.Mscrm.SubGrid.new_indvpayment.BulkDelete.Hide"
+            Location="Mscrm.SubGrid.new_indvpayment.BulkDelete" />
+          <CustomAction Id="new.new_indvpayment.Button2.Button.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="50">
+            <CommandUIDefinition>
+              <SplitButton Alt="$LocLabels:new.new_indvpayment.Button2.Button.Alt"
+                Command="Mscrm.Enabled" Id="new.new_indvpayment.Button2.Button"
+                LabelText="$LocLabels:new.new_indvpayment.Button2.Button.LabelText"
+                PopulateOnlyOnce="true" Sequence="50" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:new.new_indvpayment.Button2.Button.ToolTipTitle"
+                ToolTipDescription="$LocLabels:new.new_indvpayment.Button2.Button.ToolTipDescription">
+                <Menu Id="new.new_indvpayment.Button2.Button.Menu">
+                  <MenuSection Id="new.new_indvpayment.Section4.Section" Sequence="5"
+                    DisplayMode="Menu16">
+                    <Controls Id="new.new_indvpayment.Section4.Section.Controls">
+                      <Button
+                        Command="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnValidateInvoicesForZatca.Command"
+                        Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button"
+                        LabelText="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button.LabelText"
+                        Sequence="10" TemplateAlias="isv"
+                        ToolTipTitle="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button.ToolTipTitle"
+                        ToolTipDescription="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button.ToolTipDescription" />
+                      <Button
+                        Command="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Command"
+                        Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button"
+                        LabelText="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button.LabelText"
+                        Sequence="15" TemplateAlias="isv"
+                        ToolTipTitle="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button.ToolTipTitle"
+                        ToolTipDescription="$LocLabels:btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button.ToolTipDescription" />
+                      <Button
+                        Command="btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.btnCreateB2CSerialNumber"
+                        Id="btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button"
+                        LabelText="$LocLabels:btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.LabelText"
+                        Sequence="20" TemplateAlias="isv"
+                        ToolTipTitle="$LocLabels:btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipTitle"
+                        ToolTipDescription="$LocLabels:btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipDescription" />
+                    </Controls>
+                  </MenuSection>
+                </Menu>
+              </SplitButton>
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction Id="new.new_indvpayment.Button5.Button.CustomAction"
+            Location="Mscrm.Form.new_indvpayment.MainTab.Management.Controls._children" Sequence="5">
+            <CommandUIDefinition>
+              <SplitButton Command="Mscrm.Enabled" Id="new.new_indvpayment.Button5.Button"
+                LabelText="$LocLabels:new.new_indvpayment.Button5.Button.LabelText" Sequence="5"
+                TemplateAlias="isv">
+                <Menu Id="new.new_indvpayment.Button5.Button.Menu">
+                  <MenuSection Id="new.new_indvpayment.Section6.Section" Sequence="5"
+                    DisplayMode="Menu16">
+                    <Controls Id="new.new_indvpayment.Section6.Section.Controls">
+                      <Button
+                        Command="btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Command"
+                        Id="btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button"
+                        LabelText="$LocLabels:btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button.LabelText"
+                        Sequence="10" TemplateAlias="isv"
+                        ToolTipTitle="$LocLabels:btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button.ToolTipTitle"
+                        ToolTipDescription="$LocLabels:btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button.ToolTipDescription" />
+                      <Button
+                        Command="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Command"
+                        Id="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button"
+                        LabelText="$LocLabels:btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button.LabelText"
+                        Sequence="15" TemplateAlias="isv"
+                        ToolTipTitle="$LocLabels:btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button.ToolTipTitle"
+                        ToolTipDescription="$LocLabels:btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button.ToolTipDescription" />
+                      <Button
+                        Command="btnCreateB2CSerialNumber.Form.new_indvpayment.CreateB2CSerialNumber.CreateB2CSerialNumber"
+                        Id="btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button"
+                        LabelText="$LocLabels:btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.LabelText"
+                        Sequence="20" TemplateAlias="isv"
+                        ToolTipTitle="$LocLabels:btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipTitle"
+                        ToolTipDescription="$LocLabels:btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipDescription" />
+                    </Controls>
+                  </MenuSection>
+                </Menu>
+              </SplitButton>
+            </CommandUIDefinition>
+          </CustomAction>
+          <CustomAction
+            Id="new.senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.CustomAction"
+            Location="Mscrm.HomepageGrid.new_indvpayment.MainTab.Management.Controls._children"
+            Sequence="40">
+            <CommandUIDefinition>
+              <Button
+                Command="senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.Command"
+                Id="senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax"
+                Image32by32="$webresource:new_money32.png"
+                Image16by16="$webresource:new_money16.png"
+                LabelText="$LocLabels:senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.LabelText"
+                Sequence="40" TemplateAlias="isv"
+                ToolTipTitle="$LocLabels:senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.ToolTipTitle"
+                ToolTipDescription="$LocLabels:senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.ToolTipDescription" />
+            </CommandUIDefinition>
+          </CustomAction>
+        </CustomActions>
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates" />
+        </Templates>
+        <CommandDefinitions>
+          <CommandDefinition
+            Id="btnCreateB2CSerialNumber.Form.new_indvpayment.CreateB2CSerialNumber.CreateB2CSerialNumber">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="CreateB2CSerialNumber"
+                Library="$webresource:new_indvinstallment.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.btnCreateB2CSerialNumber">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="CreateB2CSerialNumber"
+                Library="$webresource:new_ribbonglobal.js">
+                <CrmParameter Value="SelectedControlSelectedItemIds" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpemDomInvoice"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenReverseInvoice"
+                Library="$webresource:new_indvinstallment.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpengenerateInvNum"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="sendinovicebyemailandsms"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenReviewContracts"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenReviewInvoice"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="SendDomesticInvoicesToEInvoice"
+                Library="$webresource:new_ribbonglobal.js">
+                <CrmParameter Value="SelectedControlSelectedItemReferences" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="DirectSendDomesticInvoiceToZatca"
+                Library="$webresource:new_ribbonglobal.js">
+                <CrmParameter Value="PrimaryItemIds" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="sendToAX" Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="UpdateDomesticInvoiceStatusFromZatca"
+                Library="$webresource:new_ribbonglobal.js">
+                <CrmParameter Value="PrimaryItemIds" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnValidateInvoicesForZatca.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenISVWindowWithoutParameters"
+                Library="$webresource:new_ribbonglobal.js">
+                <StringParameter
+                  Value="EInvoices/ValidateDomesticInvoices.aspx?entityName=new_indvpayment" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="recalcMasterInvoice"
+                Library="$webresource:new_indvinstallment.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenISVReportInvoices"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.Command">
+            <EnableRules>
+              <EnableRule
+                Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.Command.EnableRule.CustomRule" />
+            </EnableRules>
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenISVWindow" Library="$webresource:new_mainLib.js">
+                <StringParameter Value="Invoice/CreateDomesticInvoiceDetails.aspx" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="AutoSendToAX"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="OpenUpdateInvoiceSerial"
+                Library="$webresource:new_ribbonglobal.js" />
+            </Actions>
+          </CommandDefinition>
+          <CommandDefinition
+            Id="senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.Command">
+            <EnableRules />
+            <DisplayRules />
+            <Actions>
+              <JavaScriptFunction FunctionName="SendDomesticInvoiceToAX"
+                Library="$webresource:new_ribbonglobal.js">
+                <CrmParameter Value="SelectedControlSelectedItemIds" />
+              </JavaScriptFunction>
+            </Actions>
+          </CommandDefinition>
+        </CommandDefinitions>
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules>
+            <EnableRule
+              Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.Command.EnableRule.CustomRule">
+              <CustomRule Library="$webresource:new_mainLib.js" FunctionName="IsAdministrator"
+                Default="false" InvertResult="false" />
+            </EnableRule>
+          </EnableRules>
+        </RuleDefinitions>
+        <LocLabels>
+          <LocLabel
+            Id="btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.LabelText">
+            <Titles>
+              <Title description="Create B2C Serial" languagecode="1033" />
+              <Title languagecode="1025" description="Create B2C Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Create B2C Serial" languagecode="1033" />
+              <Title languagecode="1025" description="Create B2C Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnCreateB2CSerialNumber.Form.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Create B2C Serial" languagecode="1033" />
+              <Title languagecode="1025" description="Create B2C Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.LabelText">
+            <Titles>
+              <Title description="Create B2C Serial" languagecode="1033" />
+              <Title languagecode="1025" description="Create B2C Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Create B2C Serial" languagecode="1033" />
+              <Title languagecode="1025" description="Create B2C Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnCreateB2CSerialNumber.HomeGrid.new_indvpayment.MainTab.Management.btnCreateB2CSerialNumber.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Create B2C Serial" languagecode="1033" />
+              <Title languagecode="1025" description="Create B2C Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Print Invoice" />
+              <Title languagecode="1025" description="طباعة الفاتورة" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.ToolTipDescription">
+            <Titles>
+              <Title description="btndinvoice Description" languagecode="1033" />
+              <Title description="btndinvoice Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.btndinvoice.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Print Invoice" />
+              <Title languagecode="1025" description="طباعة الفاتورة" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Reverse Invoices" />
+              <Title languagecode="1025" description="Reverse Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.ToolTipDescription">
+            <Titles>
+              <Title description="ReverseInvoice Description" languagecode="1033" />
+              <Title description="ReverseInvoice Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.Form.new_indvpayment.MainTab.Management.ReverseInvoice.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Reverse Invoices" />
+              <Title languagecode="1025" description="Reverse Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Generate Invoice Number" />
+              <Title languagecode="1025" description="انشاء رقم الفاتورة" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.ToolTipDescription">
+            <Titles>
+              <Title description="Generate Invoice Number Description" languagecode="1033" />
+              <Title description="انشاء رقم الفاتورة" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.ginvnumber.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Generate Invoice Number" />
+              <Title languagecode="1025" description="انشاء رقم الفاتورة" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Send Email and SMS" />
+              <Title languagecode="1025" description="Send Email and SMS" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.ToolTipDescription">
+            <Titles>
+              <Title description="SendEmailandSMS Description" languagecode="1033" />
+              <Title description="SendEmailandSMS Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Actions.SendEmailandSMS.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Send Email and SMS" />
+              <Title languagecode="1025" description="Send Email and SMS" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Review Contracts" />
+              <Title languagecode="1025" description="Review Contracts" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.ToolTipDescription">
+            <Titles>
+              <Title description="ReviewContracts Description" languagecode="1033" />
+              <Title description="ReviewContracts Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewContracts.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Review Contracts" />
+              <Title languagecode="1025" description="Review Contracts" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Review Invoice" />
+              <Title languagecode="1025" description="Review Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.ToolTipDescription">
+            <Titles>
+              <Title description="ReviewInvoice Description" languagecode="1033" />
+              <Title description="ReviewInvoice Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ReviewInvoice.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="ReviewInvoice" />
+              <Title languagecode="1025" description="ReviewInvoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button.LabelText">
+            <Titles>
+              <Title description="Send Invoices To E-Invoice" languagecode="1033" />
+              <Title languagecode="1025" description="Send Invoices To E-Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Send Invoices To E-Invoice" languagecode="1033" />
+              <Title languagecode="1025" description="Send Invoices To E-Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.SendInvoicesToEInvoiceApp.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Send Invoices To E-Invoice" languagecode="1033" />
+              <Title languagecode="1025" description="Send Invoices To E-Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button.LabelText">
+            <Titles>
+              <Title description="Validate Invoices For Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Validate Invoices For Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Validate Invoices For Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Validate Invoices For Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btndinvoice.HomepageGrid.new_indvpayment.MainTab.Management.ValidateInvoicesForZatca.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Validate Invoices For Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Validate Invoices For Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button.LabelText">
+            <Titles>
+              <Title description="Direct Send To Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Direct Send To Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Direct Send To Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Direct Send To Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnDirectSendToZatca.Form.new_indvpayment.MainTab.Management.btnDirectSendToZatca.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Direct Send To Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Direct Send To Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Send Invoice To AX" />
+              <Title languagecode="1025" description="Send Invoice To Ax" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.ToolTipDescription">
+            <Titles>
+              <Title description="Send Invoice To AX" languagecode="1033" />
+              <Title description="Send Invoice To Ax Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnSentINvoice.Form.new_indvpayment.MainTab.Management.btnSendInvoice.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Send Invoice To AX" />
+              <Title languagecode="1025" description="Send Invoice To Ax" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button.LabelText">
+            <Titles>
+              <Title description="Update Status From Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Update Status From Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Update Status From Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Update Status From Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="btnUpdateInvoiceFromZatca.Form.new_indvpayment.MainTab.Management.btnUpdateInvoiceFromZatca.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Update Status From Zatca" languagecode="1033" />
+              <Title languagecode="1025" description="Update Status From Zatca" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Calculate Invoice" />
+              <Title languagecode="1025" description="Calculate Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.ToolTipDescription">
+            <Titles>
+              <Title description="Calculate Invoice" languagecode="1033" />
+              <Title description="Calculate Invoice" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="calcinvoice.Form.new_indvpayment.MainTab.Management.calcinvoice.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Calculate Invoice" />
+              <Title languagecode="1025" description="Calculate Invoice" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="تقرير الفواتير" />
+              <Title languagecode="1025" description="تقرير الفواتير" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.ToolTipDescription">
+            <Titles>
+              <Title description="InvoicesReport Description" languagecode="1033" />
+              <Title description="InvoicesReport Description" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="InvoicesReport.HomepageGrid.new_indvpayment.MainTab.Actions.InvoicesReport.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="تقرير الفواتير" />
+              <Title languagecode="1025" description="تقرير الفواتير" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.Description">
+            <Titles>
+              <Title languagecode="1033" description="CraeteInvoiceDetails Description" />
+              <Title languagecode="1025" description="CraeteInvoiceDetails Description" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Craete Invoice Details" />
+              <Title languagecode="1025" description="Craete Invoice Details" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="new.Form.new_indvpayment.MainTab.Management.CraeteInvoiceDetails.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="CraeteInvoiceDetails" />
+              <Title languagecode="1025" description="CraeteInvoiceDetails" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.Description">
+            <Titles>
+              <Title languagecode="1033" description="AutoSendToAX Description" />
+              <Title languagecode="1025" description="AutoSendToAX Description" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="AutoSendToAX" />
+              <Title languagecode="1025" description="AutoSendToAX" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.AutoSendToAX.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="AutoSendToAX" />
+              <Title languagecode="1025" description="AutoSendToAX" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.Description">
+            <Titles>
+              <Title languagecode="1033" description="Update Invoice Serial Description" />
+              <Title languagecode="1025" description="UpdateInvoiceSerial Description" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Update Invoice Serial" />
+              <Title languagecode="1025" description="Update Invoice Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="new.HomepageGrid.new_indvpayment.MainTab.Actions.UpdateInvoiceSerial.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Update Invoice Serial" />
+              <Title languagecode="1025" description="Update Invoice Serial" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.new_indvpayment.Button2.Button.Alt">
+            <Titles>
+              <Title description="Zatca Actions" languagecode="1033" />
+              <Title languagecode="1025" description="Zatca Actions" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.new_indvpayment.Button2.Button.LabelText">
+            <Titles>
+              <Title description="Zatca Actions" languagecode="1033" />
+              <Title languagecode="1025" description="Zatca Actions" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.new_indvpayment.Button2.Button.ToolTipDescription">
+            <Titles>
+              <Title description="Zatca Actions" languagecode="1033" />
+              <Title languagecode="1025" description="Zatca Actions" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.new_indvpayment.Button2.Button.ToolTipTitle">
+            <Titles>
+              <Title description="Zatca Actions" languagecode="1033" />
+              <Title languagecode="1025" description="Zatca Actions" />
+            </Titles>
+          </LocLabel>
+          <LocLabel Id="new.new_indvpayment.Button5.Button.LabelText">
+            <Titles>
+              <Title description="Zatca Actions" languagecode="1033" />
+              <Title languagecode="1025" description="Zatca Actions" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.LabelText">
+            <Titles>
+              <Title languagecode="1033" description="Send invoices to AX" />
+              <Title languagecode="1025" description="Send Invoices To AX" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.ToolTipDescription">
+            <Titles>
+              <Title description="Send invoices to AX" languagecode="1033" />
+              <Title description="Send Domestic Invoices To AX" languagecode="1025" />
+            </Titles>
+          </LocLabel>
+          <LocLabel
+            Id="senddomesicinvoicestoax.HomepageGrid.new_indvpayment.MainTab.Management.senddomesicinvoicestoax.ToolTipTitle">
+            <Titles>
+              <Title languagecode="1033" description="Send invoices to AX" />
+              <Title languagecode="1025" description="Send Invoices To AX" />
+            </Titles>
+          </LocLabel>
+        </LocLabels>
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+
+  <Languages>
+    <Language>1033</Language>
+    <Language>1025</Language>
+  </Languages>
+</ImportExportXml>
