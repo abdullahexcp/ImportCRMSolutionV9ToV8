@@ -3,7 +3,6 @@
         "IsDataSourceSecret",
         "AutoNumberFormat",
         "IsBPFEntity",
-        "SavedQuery",
         "IsRetrieveAuditEnabled",
         "IsRetrieveMultipleAuditEnabled",
         "EntityDataProviders",
@@ -19,7 +18,13 @@
         "IsRetrievable",
         "IsFilterable",
         "IsSearchable",
-        "IsSolutionAware"
+        "IsSolutionAware",
+        "HeaderColorCode",
+        "ProcessTriggerFormId",
+        "ProcessTriggerScope",
+        "ExternalTypeName",
+        "savedquery",
+        "IsCustomProcessingStepAllowedForOtherPublishers"
     ],
     "removeAttributes": [
         {
@@ -30,5 +35,6 @@
             ]
         }
     ],
-    "addObjectTypeCode": true
+    "addObjectTypeCode": true,
+    "entityTypeCodesFile": "data/entity-types.csv"
 }
